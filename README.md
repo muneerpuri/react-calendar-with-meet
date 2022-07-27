@@ -11,12 +11,12 @@ An api to manage your google calendar
 
 Npm
 ```
-npm install --save react-google-calendar-api
+npm install --save react-calendar-with-meet
 ```
 
 yarn
 ```
-yarn add react-google-calendar-api
+yarn add react-calendar-with-meet
 ```
 
 ## Use (Javascript / Typescript)
