@@ -24,6 +24,55 @@ yarn add react-calendar-with-meet
 You will need to enable the "Google Calendar API"(https://console.developers.google.com/flows/enableapi?apiid=calendar.)
 You will need a clientId and ApiKey from Google(https://developers.google.com/workspace/guides/create-credentials)
 
+
+Event Object
+
+```javascript
+
+let event = {
+      summary: "title",
+      time: 60,
+      id: "string id which must be unique", //you can use makeID function
+      description: "description",
+      calendarId: "primary",
+      start: {
+        dateTime: "2011-10-05T14:48:00.000Z",
+        timeZone: "Asia/Kolkata",
+      },
+      end: {
+        dateTime: "2011-10-06T14:48:00.000Z",
+        timeZone: "Asia/Kolkata",
+      },
+      attendees: [{ email: "email@gmail.com" }],
+      colorId: 1,
+      conferenceDataVersion: 1,
+      conferenceData: {
+        createRequest: {
+          requestId:"string id which must be unique", //you can use makeID function
+          conferenceSolutionKey: {
+            type: "hangoutsMeet",
+          },
+          status: {
+            statusCode: "success",
+          },
+        },
+      },
+    }
+```
+To create unique ID for event
+
+```javascript
+function makeid() {
+    var text = "";
+    var possible = "0123456789abcdefghijklmnopqrstuv"; //an ID must contain only these characters
+  
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+
+```
 ```javascript
 import ApiCalendar from 'react-calendar-with-meet';
 
