@@ -1,9 +1,9 @@
 # react-calendar-with-meet
 
-![Build Status](https://travis-ci.com/Insomniiak/react-google-calendar-api.svg?branch=master)
+![Build Status](https://travis-ci.com/Insomniiak/react-calendar-with-meet.svg?branch=master)
 ![npm (custom registry)](https://img.shields.io/npm/l/express.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)
-![npm (downloads)](https://img.shields.io/npm/dy/react-google-calendar-api.svg?style=popout)
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/react-google-calendar-api/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+![npm (downloads)](https://img.shields.io/npm/dy/react-calendar-with-meet.svg?style=popout)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/react-calendar-with-meet/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 An api to manage your google calendar
 
@@ -25,7 +25,7 @@ You will need to enable the "Google Calendar API"(https://console.developers.goo
 You will need a clientId and ApiKey from Google(https://developers.google.com/workspace/guides/create-credentials)
 
 ```javascript
-import ApiCalendar from 'react-google-calendar-api';
+import ApiCalendar from 'react-calendar-with-meet';
 
 const config = {
   "clientId": "<CLIENT_ID>",
@@ -64,7 +64,7 @@ const apiCalendar = new ApiCalendar(config)
 
 ```javascript
   import React, {ReactNode, SyntheticEvent} from 'react';
-  import ApiCalendar from 'react-google-calendar-api';
+  import ApiCalendar from 'react-calendar-with-meet';
 
   const config = {
     "clientId": "<CLIENT_ID>",
@@ -153,7 +153,7 @@ You need to be registered with handleAuthClick.
 #### Example
 
 ```javascript
-import ApiCalendar from 'react-google-calendar-api';
+import ApiCalendar from 'react-calendar-with-meet';
 
 const config = {
   "clientId": "<CLIENT_ID>",
